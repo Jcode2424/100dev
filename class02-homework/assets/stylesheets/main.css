@@ -136,7 +136,7 @@ h5 {
 
 .tagline {
   margin: 66px 0 22px 0;
-  text-align: left;
+  text-align: right;
 }
 
 .primary-nav {
@@ -180,6 +180,11 @@ footer.primary-nav {
 
 .teaser a:hover h3 {
   color: #a9b2b9;
+}
+
+.teaser h1,
+.teaser p {
+  text-align: center;
 }
 
 /*
@@ -373,7 +378,9 @@ p a {
   padding: 22px 0;
   text-align: center;
 }
-.speaker {
+.speaker,
+.speaker p {
   margin-bottom: 44px;
+  text-align: left;
 }
 
