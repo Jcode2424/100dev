@@ -8,13 +8,21 @@ h2{
     color: purple;
     font-weight: bold;
     font-size: 25px;
-    border: solid orange;
+    border: 5px solid orange;
 }
 
 section > p {
+    color: white;
     width: 50%;
     height: 200px;
     background: gray;
-    border: solid black;
+    border:3px solid black;
+}
+
+footer > h3 {
     color: white;
+    background: black;
+    border: 5px solid lightgreen;
+    font-size: 20px;
+    font-family: 'Roboto', san-serif;
 }
