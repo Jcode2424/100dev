@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    height: 100px;
+    width: 100%;
+    border: 3px solid magenta;
+    color: pink;
+    background: black;
+    text-align: center;
+}
+.one {
+    height: 100px;
+    width: 33.33%;
+    border: 3px solid magenta;
+    color: green;
+    background: silver;
+    float: left;
+}
+.two {
+    height: 100px;
+    width: 33.33%;
+    border: 3px solid magenta;
+    color: blue;
+    background: yellow;
+    float: left;
+}
+.three {
+    height: 100px;
+    width: 33.33%;
+    border: 3px solid magenta;
+    color: purple;
+    background: orange;
+    float: left;
+}
+footer {
+    height: 100px;
+    width: 100%;
+    border: 3px solid magenta;
+    color: white;
+    background: thistle;
+    text-align: center;
+    /*float: left*/
+    clear: both;
+}
