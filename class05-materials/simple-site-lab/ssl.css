@@ -1,0 +1,50 @@
+.container {
+  background: #7edaf6;
+  border: 4px solid limegreen;
+  padding: 60px;
+  max-width: 700px;
+  margin: 100px auto;
+  box-shadow: 0 0 0 30px #7edaf6;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  color: white;
+}
+h1 {
+  text-align: center;
+  font-family: 'PT serif', sans-serif;
+  font-style: italic;
+  font-size: 2.3rem;
+}
+h2 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+div > span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+img {
+    max-width: 200px;
+    padding: 30px;
+    float: right;
+}
+p {
+    margin-top: 30px;
+    font-family: 'PT serif', sans-serif;
+}
+section > nav {
+  clear: both;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+ul > li, ul > span {
+  display: inline-block;
+  
+}
+a {
+    color: #269a75;
+}
