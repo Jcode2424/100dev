@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Detection</title>
+    <link rel="stylesheet" href="fd.css">
+</head>
+<body>
+    <button>Say Hello</button>
+    <script>
+        function supportsCssGradients(){
+            var el = document.createElement('div');
+            el.style.backgroundImage = 'linear-gradient(to bottom, #fff, #000)';
+            return el.style.backgroundImage !== '';
+        }
+        if (supportsCssGradients()) {
+            document.body.classList.add('cssgradients');
+        } else {
+            document.body.classList.add('no-cssgradients');
+        }
+    </script>
+</body>
+</html>

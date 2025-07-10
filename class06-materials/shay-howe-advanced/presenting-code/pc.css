@@ -1,0 +1,10 @@
+body {
+    color: #666;
+    font: 14px/24px "Open Sans", "Helvetica-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+p {
+    margin: 0 0 24px 0;
+}
+code {
+    font-family: "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+}

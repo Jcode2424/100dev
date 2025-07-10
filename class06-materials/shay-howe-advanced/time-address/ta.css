@@ -1,0 +1,13 @@
+body {
+    color: #666;
+    font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+p {
+    margin-bottom: 24px;
+}
+strong {
+    font-weight: bold;
+}
+address {
+    font-style: italic;
+}
