@@ -3,42 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Khan Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ka.css">
 </head>
 <body>
     <header>
-      <nav>
+      <nav class="navbar clearfix">
         <select name="Courses">
           <option value="Courses" selected>Courses</option>
         </select>
-        <div>
+        <div class="search-box">
           <input type="text" placeholder="Search">
         </div>
-        <ul>
-          <li><img src="khanacademylogo.png" alt="logo of Khan Academy"></li>
+        <img src="images/ka-logo.png" alt="logo of Khan Academy" class="logo">
+        <ul class="nav-links clearfix">
           <li><a href="#">Donate</a></li>
           <li><a href="#">Login</a></li>
           <li><a href="#">Sign up</a></li>
         </ul>
       </nav>
     </header>
-    <section>
-      <img src="khanstudents.jpg" alt="Students of Khan Academy">
+    <section class="container">
+      <div class="main">
+        <div class="main-image">
+          <img src="images/ka-students.png" alt="Students of Khan Academy">
+        </div>
+        <div class="main-text">
+          <h1>For every student, <br> every classroom. <br> <span class="underline">Real results.</span></h1>
+          <p>We're a nonprofit with the mission to provide a free, world-class <br> education for anyone, anywhere.</p>
+          <nav>
+            <ul class="nav-links-second clearfix">
+              <li><a href="#"><button class="blue-button">Learners</button></a></li>
+              <li><a href="#"><button class="blue-button">Teachers</button></a></li>
+              <li><a href="#"><button class="blue-button">Districts</button></a></li>
+              <li><a href="#"><button class="blue-button">Parents</button></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </section>
-    <section>
-      <h1>For every student, <br> every classroom. <br> Real results.</h1>
-      <p>We're a nonprofit with the mission to provide a free, world-class <br> education for anyone, anywhere.</p>
-      <nav>
-        <ul>
-          <li><a href="#">Learners</a></li>
-          <li><a href="#">Teachers</a></li>
-          <li><a href="#">Districts</a></li>
-          <li><a href="#">Parents</a></li>
-        </ul>
-      </nav>
-    </section>
-    <section>
-      <h2>Why Khan Academy works</h2>
-    </section>
-</body>
 </html>

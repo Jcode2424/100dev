@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+-------------------------------------------------------------
+Header
+-------------------------------------------------------------
+*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.navbar {
+    position: relative;
+    height: 4em;
+    width: 100%;
+    border: 1px solid rgb(163, 163, 163);
+    overflow: hidden;
+}
+.navbar.clearfix {
+    overflow: hidden;
+}
+nav > * {
+    float: left;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    margin-right: 1em;
+}
+.navbar select {
+    height: 2em;
+    margin: 0.5em 1em 0.5em 0;
+}
+.search-box {
+    width: 30%;
+    margin-right: 1em;
+    padding: 0.5em 0;
+}
+.search-box input {
+    width: 100%;
+    height: 2em;
+    padding: 0 0.5em;
+}
+.navbar div {
+    width: 25%;
+    padding: 0.5em 1em;
+}
+.navbar input[type="text"] {
+    width: 100%;
+    height: 2em;
+    padding: 0 0.5em;
+}
+.nav-links {
+    list-style: none;
+    margin-left: calc(50% + 5em);
+    width: auto;
+    floag: left;
+}
+.nav-links li {
+    display: inline-block;
+    line-height: 3em;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #2254eb;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "Roboto", "Sans-Serif";
+}
+
+/*
+---------------------------------------------------------------
+Main Section
+---------------------------------------------------------------
+*/
+.container {
+    display: table;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.main{
+    display: table-cell;
+    vertical-align: middle;
+}
+.main-image,
+.main-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin: 0 1em;
+}
+.container::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.container > * {
+    position: relative;
+    z-index: 1;
+}
+.main-text h1 {
+    font-size: 2.5em;
+    font-family: 'Lora';
+}
+.main-text p {
+    margin-top: 2.5em;
+}
+.main-text span {
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(59, 237, 189);
+}
+.container .main-text {
+    margin: auto 0;
+}
+.nav-links-second {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 1em 0 0;
+    text-align: center;
+}
+.nav-links-second li {
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+/*
+----------------------------------------------------------------
+Button
+----------------------------------------------------------------
+*/
+.blue-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    margin-top: 2em;
+    padding: 0.6em 1em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.blue-button:hover {
+    background-color: #0056b3;
+}

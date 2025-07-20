@@ -8,24 +8,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="bbc.css">
 </head>
 <body>
     <nav>
-        <a href="#"><img src="images/bbc_logo.png" class="logo"></a>
-        <a href="#" class="navsignin">Sign in</a>
-        <a href="#" class="navbar">Home</a>
-        <a href="#" class="navbar">News</a>
-        <a href="#" class="navbar">Sport</a>
-        <a href="#" class="navbar">Reel</a>
-        <a href="#" class="navbar">Worklife</a>
-        <a href="#" class="navbar">Travel</a>
-        <a href="#" class="navbar">Future</a>
-        <a href="#" class="navbar">Culture</a>
-        <a href="#" class="navbar navmore">More</a>
-        <div class="navbar search-box" style="display: inline; position: relative;">
-            <input type="text" placeholder="Search"/>
-            <i class="fas fa-search"></i>
+        <div class="nav-links">
+            <a href="#"><img src="images/bbc_logo.png" class="logo"></a>
+            <a href="#" class="navsignin"><img src="images/signin.png" class="inverted" alt="signin logo"> Sign in</a>
+            <a href="#" class="navbar">Home</a>
+            <a href="#" class="navbar">News</a>
+            <a href="#" class="navbar">Sport</a>
+            <a href="#" class="navbar">Reel</a>
+            <a href="#" class="navbar">Worklife</a>
+            <a href="#" class="navbar">Travel</a>
+            <a href="#" class="navbar">Future</a>
+            <a href="#" class="navbar">Culture</a>
+            <div class="navmore">
+                <a href="#" class="navbar">More  <span class="triangle">&#9660;</span></a>
+                <ul class="dropdown">
+                    <li><a href="#">Choice 1</a></li>
+                    <li><a href="#">Choice 2</a></li>
+                    <li><a href="#">Choice 3</a></li>
+                </ul>
+            </div>
+            <div class="navbar search-box">
+                <input type="text" placeholder="Search"/>
+                <i class="fas fa-search search-icon"></i>
+            </div>
         </div>
     </nav>
     <h2 class="big-heading">Welcome to BBC.com</h2>
@@ -36,7 +46,7 @@
                 <div class="text-overlay">
                     <h3>Israel and UAE strike historic peace deal</h3>
                     <p>Israel and the UAE agree to normalise relations, marking the third Israel-Arab peace deal.</p>
-                    <a href="#">&vert; MIDDLE EAST</a>
+                    <a href="#"><span class="red vert-bar">&#x2758;</span> MIDDLE EAST</a>
                 </div>
             </div>
         </section>
@@ -46,7 +56,7 @@
                     <img src="images/bbc_2.jpg" alt="flags of Canada and US">
                     <div class="text-overlay">
                         <h3>Americans, go home: Tension at Canada-US border</h3>
-                        <a href="#">&vert; CANADA</a>
+                        <a href="#"><span class="blue vert-bar">&#x2758;</span> CANADA</a>
                     </div>
                 </div>
             </div>
@@ -55,49 +65,49 @@
                     <img src="images/bbc_3.jpg" alt="nurse holding a covid vaccine bottle">
                     <div class="text-overlay">
                         <h3>How will the world vaccinate seven billion people?</h3>
-                        <a href="#">&vert; HEALTH</a>
+                        <a href="#"><span class="red vert-bar">&#x2758;</span> HEALTH</a>
                     </div>
                 </div>
             </div>
             <div class="small-story">
-                <div class="feature-story">
+                <div class="feature-story bottom">
                     <img src="images/bbc_4.webp" alt="woman working on a computer">
                     <div class="text-overlay">
                         <h3>The online 'productivity gyms'</h3>
-                        <a href="#">&vert; WORKLIFE</a>
+                        <a href="#"><span class="blue vert-bar">&#x2758;</span> WORKLIFE</a>
                     </div>
                 </div>
             </div>
             <div class="small-story">
-                <div class="feature-story">
+                <div class="feature-story bottom">
                     <img src="images/bbc_5.webp" alt="a folk singer">
                     <div class="text-overlay">
                         <h3>The folk singer murdered for his music</h3>
-                        <a href="#">&vert; CULTURE</a>
+                        <a href="#"><span class="grey vert-bar">&#x2758;</span> CULTURE</a>
                     </div>
                 </div>
             </div>
         </section>
     </section>
-    <h2 class="second-heading">&vert; News</h2>
+    <h2 class="second-heading"><span class="red vert-bar">&vert;</span> News</h2>
     <section class="third-section">
         <div class="feature-story no-gradient">
             <img src="images/bbc_6.jpg" alt="Biden and Harris">
             <h3>Biden and Harris say Trump has left US 'in tatters'</h3>
             <p>Joe Biden and running mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</p>
-            <a href="#">&vert; US ELECTION 2020</a>
+            <a href="#"><span class="red vert-bar">&#x2758;</span> US ELECTION 2020</a>
         </div>
         <div class="feature-story no-gradient">
             <img src="images/bbc_7.jpg" alt="Women protest in Belarus">
             <h3>Women form 'solidarity chains' in Belarus protests</h3>
             <p>Women take to the streets of Minsk dressed in white as they demand an end to police brutality.</p>
-            <a href="#">&vert; EUROPE</a>
+            <a href="#"><span class="red vert-bar">&#x2758;</span> EUROPE</a>
         </div>
         <div class="feature-story no-gradient">
             <img src="images/bbc_8.webp" alt="Trump with hair blowing in the air">
             <h3>Trump says low-pressure shower heads won't wash</h3>
             <p>The US calls for rules to be eased after Donald Trump complained of issues washing his hair</p>
-            <a href="#">&vert; US & CANADA</a>
+            <a href="#"><span class="red vert-bar">&#x2758;</span> US & CANADA</a>
         </div>
     </section>
 </body>
