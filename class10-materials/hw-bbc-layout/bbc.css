@@ -114,6 +114,15 @@ nav {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.search-input {
+    background-image: url("images/magnifire.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: right 10px center;
+    padding-left: 35px;
+    height: 2em;
+    font-size: 1em;
+}
 
 /*
 ---------------------------------------------------------------

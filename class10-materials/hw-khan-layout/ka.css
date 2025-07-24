@@ -20,7 +20,7 @@ Header
     border: 1px solid rgb(163, 163, 163);
     overflow: hidden;
 }
-.navbar.clearfix {
+.navbar .clearfix {
     overflow: hidden;
 }
 nav > * {
@@ -35,13 +35,38 @@ nav > * {
     margin-right: 1em;
 }
 .navbar select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path fill='%232254eb' d='M0 2.5 L5 7.5 L10 2.5'/></svg>") no-repeat right center;
+    background-size: 0.7em;
+    padding-right: 1.3em;
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #2254eb;
+    cursor: pointer;
     height: 2em;
-    margin: 0.5em 1em 0.5em 0;
+    line-height: 2em;
+    /* margin: 0.5em 1em 0.5em 0;*/
+    margin-left: 10em;
+    margin-right: 2%;
+}
+.navbar select,
+.search-box {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .search-box {
-    width: 5em;
+    width: 250px !important;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     margin-right: 1em;
-    padding: 0.5em 0;
     display: inline-block;
 }
 .search-box input {
@@ -49,10 +74,23 @@ nav > * {
     height: 100%;
     font-size: 1em;
     padding: 0 0.5em;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #333;
     box-sizing: border-box;
+    border-radius: 4px;
+}
+.search-input {
+    background-image: url("images/magnifire.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: right 10px center;
+    padding-left: 35px;
+    height: 2em;
+    font-size: 1em;
 }
 .navbar div {
-    width: 25%;
+    width: auto;
     padding: 0.5em 1em;
 }
 .navbar input[type="text"] {
@@ -62,14 +100,15 @@ nav > * {
 }
 .nav-links {
     list-style: none;
-    margin-left: calc(50% + 5em);
-    width: auto;
-    float: left;
+    float: right;
+    margin-right: 10em;
+    width: 30%;
+    text-align: right;
 }
 .nav-links li {
     display: inline-block;
-    line-height: 3em;
-    margin: auto 5%;
+    line-height: 4em;
+    margin: 0 3%;
 }
 .nav-links a,
 .search-box input::placeholder{
@@ -132,12 +171,12 @@ Main Section
     list-style: none;
     display: inline-block;
     padding: 0;
-    margin: 1em 0 0;
+    margin: 1em 0 0 0;
     text-align: center;
 }
 .nav-links-second li {
     display: inline-block;
-    margin: 0 0.5em;
+    margin: 0 1em 0 0;
 }
 
 /*
