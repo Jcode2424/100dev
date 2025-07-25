@@ -4,99 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Crunch</title>
-    <link rel="stylesheet" href="tc.css"
+    <link rel="stylesheet" href="tc.css">
 </head>
 <body>
-    <section>
-        <nav class="vertical-nav">
-            <a href="#"><img src="images/tclogobig.png" alt="Company logo of TC"></a>
-            <h5>Join TechCrunch+</h5>
-            <a href="#">Login</a>
-            <nav>
-            <div>
-                <input type="text" placeholder="Search" />
-                <i class="fas fa-search"></i>
-            </div>
-            <ul>
-                <li><a href="#">Startups</a></li>
-                <li><a href="#">TechCrunch+</a></li>
-                <li><a href="#">Audio</a></li>
-                <li><a href="#">Newsletters</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Advertise</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">More</a></li>
-            </ul>
-        </nav>
-    </section>
-    <section>
-        <div>
-            <h3>Microsoft to buy Activision Blizzard for $68.7 billion</h3>
-            <span>Amanda Silberling</span>
-            <image src="images/activision.png" alt="Company logo image of Activision">
-        </div>
-        <div>
-            <h4>Register today for DeFi and the Future of Programmable Money Summit</h4>
-            <span>Alexandra Ames</span>
-        </div>
-        <div>
-            <image src="images/tclogosmall.png" alt="company logo of Tech Crunch+">
-            <h4>For investors, future of work istn' only about HR</h4>
-            <span>Anna Heim</span>
-        </div>
-        <div>
-            <h4>Upward plans to open a 250,000-squre-foot vertical farm in PA early next year</h4>
-            <span>Brian Heater</span>
-        </div>
-        <div>
-            <h4>Wayve raises $200M Series B led by Eclipse for its AI for autonomous delivery vehicles</h4>
-            <span>Mike Butcher</span>
-        </div>
-    </section>
-    <section>
-        <h5>The Latest</h5>
-        <table>
-            <tr>
-            <td>
-                <h4>Snapchat says it's getting better at finding illicit drug dealers before users do</h4>
-                <span>Taylor Hatmaker</span>
-                <span>11:15AM PST&middotJanuary 18, 2022</span>
-            </td>
-            <td>
-                <p>
-                Snapchat has faced increasing criticism in recent years as the opioid crisis plays out an social media, often with tragic results. In October, an NBC investigation reported the stories of a number ...
-                </p>
-            </td>
-            <td>
-                <img src="images/snapchat.png" alt="images of a snapchat mobile icon">
-            </td>
-            </tr>
-            <tr>
-            <td>
-                <image src="images/tclogosmall.png" alt="company logo of Tech Crunch+">
-                <h4>Will quantum computing remain the domain of the specialist VC?</h4>
-                <span>Maria Lepskaya</span>
-                <span>11:06 AM PST&middotJanuary 18, 2022</span>
-            </td>
-            <td>
-                <p>Despite all the buzz, quantum investments are still not mainstream: there wre about 90 quantum investments in 2021.</p>
-            </td>
-            <td>
-                <img src="images/quantumcompute.png" alt="quantum computer">
-            </td>
-            </tr>
-            <tr>
-            <td>
-                <h4>Ex-Dispo founding members launch Roll app, where creators post exclusive content</h4>
-            </td>
-            <td>
-                <p>Today marks the launch of the Roll app, which aims to create an easy way for creators to make an extra buck while portraying a potentially more authentic version of themselves to their fans. Alread ...</p>
-            </td>
-            <td>
-                <img src="images/rollapp.png" alt="image of an influencer and his social media">
-            </td>
-            </tr>
-        </table>
+    <section class="container">
+        <section>
+            <nav class="vertical-nav">
+                <a href="#"><img src="images/tclogobig.png" alt="Company logo of TC"></a>
+                <h5>Join TechCrunch+</h5>
+                <a href="#">Login</a>
+                <nav>
+                <div>
+                    <input type="text" placeholder="Search" />
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul>
+                    <li><a href="#">Startups</a></li>
+                    <li><a href="#">TechCrunch+</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="main">
+            <section class="first-section">
+                <div class="main-article">
+                    <h2>Microsoft to buy Activision Blizzard for $68.7 billion</h2>
+                    <span class="author">Amanda Silberling</span>
+                    <img src="images/activision.png" alt="Company logo image of Activision">
+                </div>
+                <div class="side-articles">
+                    <div>
+                        <h4>Register today for DeFi and the Future of Programmable Money Summit</h4>
+                        <span>Alexandra Ames</span>
+                    </div>
+                    <div>
+                        <img src="images/tclogosmall.png" alt="company logo of Tech Crunch+" class="small-logo">
+                        <h4>For investors, future of work istn' only about HR</h4>
+                        <span>Anna Heim</span>
+                    </div>
+                    <div>
+                        <h4>Upward plans to open a 250,000-squre-foot vertical farm in PA early next year</h4>
+                        <span>Brian Heater</span>
+                    </div>
+                    <div>
+                        <h4>Wayve raises $200M Series B led by Eclipse for its AI for autonomous delivery vehicles</h4>
+                        <span>Mike Butcher</span>
+                    </div>
+                </div>
+            </section>
+            <section class="second-section">
+                <h5>The Latest</h5>
+                <table>
+                    <tr>
+                    <td class="row">
+                        <h4>Snapchat says it's getting better at finding illicit drug dealers before users do</h4>
+                        <span>Taylor Hatmaker</span>
+                        <span>11:15AM PST&middotJanuary 18, 2022</span>
+                    </td>
+                    <td class="row">
+                        <p>
+                        Snapchat has faced increasing criticism in recent years as the opioid crisis plays out an social media, often with tragic results. In October, an NBC investigation reported the stories of a number ...
+                        </p>
+                    </td>
+                    <td class="row">
+                        <img src="images/snapchat.png" alt="images of a snapchat mobile icon" class="second-images">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="row">
+                        <img src="images/tclogosmall.png" alt="company logo of Tech Crunch+" class="small-logo">
+                        <h4>Will quantum computing remain the domain of the specialist VC?</h4>
+                        <span>Maria Lepskaya</span>
+                        <span>11:06 AM PST&middotJanuary 18, 2022</span>
+                    </td>
+                    <td class="row">
+                        <p>Despite all the buzz, quantum investments are still not mainstream: there wre about 90 quantum investments in 2021.</p>
+                    </td>
+                    <td class="row">
+                        <img src="images/quantumcompute.png" alt="quantum computer" class="second-images">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="row">
+                        <h4>Ex-Dispo founding members launch Roll app, where creators post exclusive content</h4>
+                    </td>
+                    <td class="row">
+                        <p>Today marks the launch of the Roll app, which aims to create an easy way for creators to make an extra buck while portraying a potentially more authentic version of themselves to their fans. Alread ...</p>
+                    </td>
+                    <td class="row">
+                        <img src="images/rollapp.png" alt="image of an influencer and his social media" class="second-images">
+                    </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
     </section>
 </body>
 </html>

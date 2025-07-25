@@ -1,3 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+----------------------------------------------------------------
+Vertical Nav Bar
+----------------------------------------------------------------
+*/
+.container {
+    clear: both;
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.container > section {
+    float: left;
+}
+img.small-logo {
+    width: 15%;
+}
+.vertical-nav {
+    color: lightslategray;
+    width: 10%;
+    position: absolute;
+    height: 100%;
+    z-index: 1000;
+}
+.vertical-nav img {
+    width: 95%;
+}
 .vertical-nav a {
+    color: lightslategray;
     text-decoration: none;
+}
+.vertical-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*
+----------------------------------------------------------------
+Main
+----------------------------------------------------------------
+*/
+.main {
+    color: black;
+    clear: both;
+}
+.main {
+    margin-left: 13%;
+    padding: 10px;
+}
+
+/*
+----------------------------------------------------------------
+First Section
+----------------------------------------------------------------
+*/
+.first-section {
+    clear: both;
+    margin-bottom: 2em;
+}
+.first-section > div {
+    float: left;
+}
+.author {
+    display: block;
+    margin-bottom: 0.5em;
+}
+.main-article {
+    width: 60%;
+}
+.main-article img {
+    width: 80%;
+}
+.first-section h2,
+.first-section h4 {
+    font-weight: bold;
+}
+.side-articles {
+    width: 40%;
+}
+
+/*
+----------------------------------------------------------------
+Second Section
+----------------------------------------------------------------
+*/
+.second-section {
+    clear: both;
+    margin-top: 20px;
+}
+td {
+    padding: 1%;
+}
+td.row {
+    width: 33.33%;
+}
+.row > .second-images {
+    width: 95%;
 }
