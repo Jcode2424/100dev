@@ -39,6 +39,22 @@ img.small-logo {
     list-style-type: none;
     padding-left: 0;
 }
+.searchbox {
+    width: 100%;
+    box-sizing: border-box;
+}
+.search-input {
+    width: 100%;
+    background-image: url(images/magnifire.png);
+    background-repeat: no-repeat;
+    background-position: right 80px center;
+    background-size: 15px 15px;
+    height: 30px;
+    width: 200px;
+    font-size: 1em;
+    border: none;
+    max-width: 100%
+}
 
 /*
 ----------------------------------------------------------------
@@ -52,6 +68,10 @@ Main
 .main {
     margin-left: 13%;
     padding: 10px;
+}
+.horizontal-line {
+        border: 0;
+        border-top: 1px solid #ccc;
 }
 
 /*
@@ -78,7 +98,7 @@ First Section
 }
 .first-section h2,
 .first-section h4 {
-    font-weight: bold;
+    font-weight: 900;
 }
 .side-articles {
     width: 40%;
@@ -92,6 +112,20 @@ Second Section
 .second-section {
     clear: both;
     margin-top: 20px;
+}
+.second-section h4 {
+    font-weight: 900;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.styled-table td {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+.styled-table tr:first-child td {
+    border-top: none;
 }
 td {
     padding: 1%;
