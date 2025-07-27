@@ -1,0 +1,19 @@
+/*
+----------------------------------------------------------------
+Book Table Section
+----------------------------------------------------------------
+*/
+.info-container {
+    width: 100%;
+    overflow: hidden;
+}
+.left-info {
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+.right-info {
+    float: right;
+    width: 45%;
+    text-align: right;
+}
