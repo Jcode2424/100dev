@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+----------------------------------------------------------
+Navigation Bar
+----------------------------------------------------------
+*/
+nav {
+    width: 100%;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+}
+.navbar {
+    line-height: 50px;
+}
+.navbar li {
+    float: left;
+    position: relative;
+    width: 8%;
+    height: 50px;
+}
+li.navbar-logo,
+li.book-online {
+    width: 15%;
+}
+li.book-online {
+    text-align: right;
+}
+
+/*
+----------------------------------------------------------------
+Main Section
+----------------------------------------------------------------
+*/
+.emphasis {
+    font-size: 2em;
+}
+.slider-container div {
+    float: left;
+}
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border: none;
+}
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    font-size: 2em;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.left-arrow {
+    left: 20px;
+}
+.right-arrow {
+    right: 20px;
+}
+.slider-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: background-image 1s ease-in-out;
+}
+.content-one,
+.content-two {
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    background: black;
+}
+
+.slider-1 {
+    background-image: url('images/image1.png');
+    background-size: cover;
+    background-position: center;
+}
+.slider-2 {
+    background-image: url('images/image2.png');
+    background-size: cover;
+    background-position: center;
+}
+.slider-3 {
+    background-image: url('images/image3.png');
+    background-size: cover;
+    background-position: center;
+}
+.slider-4 {
+    background-image: url('images/image4.png');
+    background-size: cover;
+    background-position: center;
+}
+.slider-5 {
+    background-image: url('images/image5.png');
+    background-size: cover;
+    background-position: center;
+}
+.slider-6 {
+    background-image: url('images/image6.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/*
+----------------------------------------------------------------
+Second Section
+----------------------------------------------------------------
+*/
+.second-section {
+    clear: both;
+}
+.second-section div {
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    float: left;
+}
+
+/*
+----------------------------------------------------------------
+Third Section
+----------------------------------------------------------------
+*/
+.third-section {
+    clear: both;
+    width: 100%;
+    height: 600px;
+    background-color: lightgray;
+    margin: auto;
+}
+.third-section div {
+    float: left;
+    width: 50%;
+}
+
+/*
+----------------------------------------------------------------
+Beauticians
+----------------------------------------------------------------
+*/
+.beauticians {
+    clear: both;
+    width: 100%;
+    padding: 3em;
+}
+.beauticians img {
+    width: 80%;
+}
+.beauticians div {
+    float: left;
+    width: 33%;
+}
+
+/*
+----------------------------------------------------------------
+Offer
+----------------------------------------------------------------
+*/
+.offer {
+    clear: both;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background-image: url(images/offer.png);
+    background-size: cover;
+    background-position: center;
+}
+section.offer {
+    padding: auto 65% auto 7%;
+    box-sizing: border-box;
+}
+
+/*
+----------------------------------------------------------------
+Lookbook
+----------------------------------------------------------------
+*/
+.lookbook {
+    clear: both;
+    width: 100%;
+}
+
+.lookbook img {
+    width: 33%;
+}
