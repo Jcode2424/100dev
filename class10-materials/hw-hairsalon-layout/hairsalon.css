@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 350;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -32,6 +35,7 @@ nav ul {
 li.navbar-logo,
 li.book-online {
     width: 15%;
+    overflow: hidden;
 }
 li.book-online {
     text-align: right;
@@ -52,7 +56,6 @@ Main Section
     position: relative;
     width: 100%;
     height: 1000px;
-    margin: auto;
     overflow: hidden;
     border: none;
 }
@@ -68,7 +71,7 @@ Main Section
     z-index: 10;
 }
 .left-arrow {
-    left: 20px;
+    right: 70px;
 }
 .right-arrow {
     right: 20px;
@@ -76,8 +79,8 @@ Main Section
 .slider-container {
     position: absolute;
     width: 100%;
-    height: 100%;
-    transition: background-image 1s ease-in-out;
+    height: auto;
+    transition: background-image 0.5s ease-in-out;
 }
 .content-one,
 .content-two {
@@ -87,9 +90,58 @@ Main Section
     color: white;
     text-align: left;
     padding: 20px;
-    background: black;
 }
-
+.content-one {
+    margin-left: 100px;
+}
+.content-one h1 {
+    font-size: 4em;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    line-height: 1.1em;
+    overflow: hidden;
+}
+.content-one p {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.our-services {
+    background: black;
+    width: 150px;
+    height: 50px;
+}
+.our-services a {
+    color: white;
+}
+.content-one > div {
+    background: black;
+    width: 280px;
+    height: 330px;
+    padding: 50px;
+    margin: 100px 0;
+}
+.content-two {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 30em;
+}
+.content-two p {
+    transform: rotate(90deg);
+    transform-origin: center;
+    white-space: nowrap;
+    margin-right: 150px;
+    overflow: hidden;
+    height: 100%;
+    width: auto;
+}
+.button-book-online {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
 .slider-1 {
     background-image: url('images/image1.png');
     background-size: cover;
@@ -128,13 +180,22 @@ Second Section
 */
 .second-section {
     clear: both;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    height: 600px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
 }
 .second-section div {
-    width: 30%;
-    padding: 10px;
-    margin: 20px;
     text-align: center;
-    float: left;
+}
+.second-section p {
+    max-width: 20em;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /*
@@ -146,12 +207,35 @@ Third Section
     clear: both;
     width: 100%;
     height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
     background-color: lightgray;
-    margin: auto;
 }
 .third-section div {
-    float: left;
-    width: 50%;
+    width: 100%;
+    margin: auto;
+}
+.third-section > div:first-child {
+    padding-left: 30%;
+}
+.third-section h2 {
+    font-size: 2em;
+    margin: 10px;
+}
+.third-section p {
+    width: 80%;
+    margin: 10px;
+    line-height: 1.5em;
+}
+.third-section button {
+    margin: 10px;
+}
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /*
@@ -199,6 +283,7 @@ Lookbook
 .lookbook {
     clear: both;
     width: 100%;
+    text-align: center;
 }
 
 .lookbook img {
