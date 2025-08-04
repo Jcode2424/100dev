@@ -1,8 +1,83 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 /*
 ----------------------------------------------------------------
-Book Table Section
+Welcome Section
 ----------------------------------------------------------------
 */
+.welcome {
+    width: 100%; 
+}
+.welcome h1 {
+    font-size: 4em;
+    font-family: "Libertinus Serif", sans-serif;
+}
+.welcome nav li {
+    float: left;
+}
+.welcome .social-media img {
+    width: 20px;
+    height: auto;
+}
+
+/*
+----------------------------------------------------------------
+About Us Section
+----------------------------------------------------------------
+*/
+.about-us {
+    clear: both;
+}
+.about-us h2 {
+    font-size: 3.5em;
+    font-family: "Libertinus Serif", sans-serif;
+}
+/*
+----------------------------------------------------------------
+Our Specialty Section
+----------------------------------------------------------------
+*/
+.specialty h2 {
+    font-size: 3.5em;
+    font-family: "Libertinus Serif", sans-serif;  
+}
+.specialty nav li {
+    float: left;
+    width: 20%;
+}
+.specialty .menu {
+    clear: both;
+}
+.specialty .menu li {
+    float: left;
+    width: 24%;
+    list-style: none;
+}
+.specialty .menu img {
+    width: 95%;
+}
+/*
+----------------------------------------------------------------
+Opening Hours Section
+----------------------------------------------------------------
+*/
+.hours {
+    clear: both;
+}
+.hours h2 {
+    font-size: 3.5em;
+    font-family: "Libertinus Serif", sans-serif;
+}
 .info-container {
     width: 100%;
     overflow: hidden;
@@ -16,4 +91,18 @@ Book Table Section
     float: right;
     width: 45%;
     text-align: right;
+}
+
+/*
+----------------------------------------------------------------
+Customer Reviews Section
+----------------------------------------------------------------
+*/
+.reviews h2 {
+    font-size: 3.5em;
+    font-family: "Libertinus Serif", sans-serif;
+}
+.reviews img {
+    text-align: center;
+    width: 20%;
 }

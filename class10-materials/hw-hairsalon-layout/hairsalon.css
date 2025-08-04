@@ -32,6 +32,14 @@ nav ul {
     width: 8%;
     height: 50px;
 }
+img.cart {
+    overflow: hidden;
+    height: 1.5em;
+    width: auto;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    margin-bottom: 12px;
+}
 li.navbar-logo,
 li.book-online {
     width: 15%;
@@ -48,6 +56,7 @@ Main Section
 */
 .emphasis {
     font-size: 2em;
+    font-weight: bold;
 }
 .slider-container div {
     float: left;
@@ -211,6 +220,7 @@ Third Section
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     background-color: lightgray;
+    margin-bottom: 100px;
 }
 .third-section div {
     width: 100%;
@@ -231,11 +241,20 @@ Third Section
 .third-section button {
     margin: 10px;
 }
-iframe {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.third-section div:nth-child(2) {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.third-section iframe {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    transform: translateY(-50%);
+    border: none;
 }
 
 /*
@@ -247,13 +266,33 @@ Beauticians
     clear: both;
     width: 100%;
     padding: 3em;
+    text-align: center;
+    margin-bottom: 100px;
+
 }
 .beauticians img {
     width: 80%;
+    position: relative;
 }
-.beauticians div {
-    float: left;
+.beauticians > div {
+    display: inline-block;
     width: 33%;
+    text-align: center;
+    vertical-align: top;
+}
+.beauticians h5 {
+    font-size: 1.5em;
+}
+
+.profile {
+    color: white;
+    background: black;
+    margin: auto;
+    position: relative;
+    top: -30px;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
 }
 
 /*
@@ -269,10 +308,35 @@ Offer
     background-image: url(images/offer.png);
     background-size: cover;
     background-position: center;
-}
-section.offer {
     padding: auto 65% auto 7%;
     box-sizing: border-box;
+    margin-bottom: 200px;
+    text-align: center;
+}
+.coupon {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: -20%;
+}
+.offer h5 {
+    font-size: 4em;
+    text-align: center;
+}
+.offer p {
+    font-size: 2em;
+}
+button.book-offer {
+    width: 300px;
+    height: 70px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    background: black;
+    overflow: hidden;
+}
+.book-offer a {
+    text-align: center;
+    line-height: 70px;
+    color: white;
 }
 
 /*
@@ -285,7 +349,88 @@ Lookbook
     width: 100%;
     text-align: center;
 }
-
+.lookbook h2 {
+    font-size: 2.3em;
+    font-weight: 500;
+}
 .lookbook img {
-    width: 33%;
+    cursor: pointer;
+    position: relative;
+}
+.lookbook-photo {
+    width: 32%;
+    display: inline-block;
+    position: relative;
+    margin: 5px 5px 0 5px;
+}
+.lookbook-photo img {
+    width: 100%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.lookbook-photo img:hover {
+    opacity: 0.7;
+}
+.lookbook-photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 5px);
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+.lookbook-photo:hover::before {
+    opacity: 1;
+}
+.lookbook-photo::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.lookbook-photo:hover::after {
+    opacity: 1;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
 }

@@ -1,0 +1,95 @@
+.lookbook {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+.lookbook h2 {
+    font-size: 2.3em;
+    font-weight: 500;
+}
+.lookbook div {
+    margin-bottom: 30px;
+}
+.lookbook img {
+    cursor: pointer;
+    position: relative;
+}
+.lookbook-photo {
+    width: 32%;
+    display: inline-block;
+    position: relative;
+    margin: 5px 5px 0 5px;
+}
+.lookbook-photo img {
+    width: 100%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.lookbook-photo img:hover {
+    opacity: 0.7;
+}
+.lookbook-photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+.lookbook-photo:hover::before {
+    opacity: 1;
+}
+.lookbook-photo::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.lookbook-photo:hover::after {
+    opacity: 1;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+}
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}

@@ -14,14 +14,14 @@
         <ul class="navbar">
             <li class="navbar-logo"><a href="#"><img src="images/ayesha.png" alt="Ayesha logo"></a></li>
             <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">LOOKBOOK</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#second-section">ABOUT</a></li>
+            <li><a href="#beauticians">SERVICES</a></li>
+            <li><a href="#lookbook">LOOKBOOK</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#booking">CONTACT</a></li>
             <li><a href="#">SEARCH</a></li>
-            <li><a href="#">CART</a></li>
-            <li class="book-online"><a href="#">&mdash; BOOK ONLINE</a></li>
+            <li><a href="#cart">CART<img src="images/cart.png" alt="cart icon" class="cart"></a></li>
+            <li class="book-online"><a href="#booking">&mdash; BOOK ONLINE</a></li>
         </ul>
     </nav>
     <section class="main-section">
@@ -31,7 +31,7 @@
                 <div class="content-one">
                     <h1>BLONDE <br>& HIGHLIGHT</h1>
                     <p>DIVIDE YOUR UNIQUENESS BY YOUR HAIR IN STYLE</p><br>
-                    <button class="our-services"><a href="#">&mdash; OUR SERVICES</a></button><br>
+                    <button class="our-services"><a href="#second-section">&mdash; OUR SERVICES</a></button><br>
                     <div>
                         <h4>YOUR FIRST VISIT?</h4>
                         <p><strong class="emphasis">-20%</strong> FOR THE FIRST<br>CLASSIC HAIR COLORING</p>
@@ -45,8 +45,8 @@
             <button class="arrow right-arrow">&#8594;</button>
         </div>
     </section>
-    <section class="second-section">
-        <a href="#"><div>
+    <section class="second-section" ID="second-section">
+        <a href="#beauticians"><div>
             <img src="images/beautician.png" alt="a beautician">
             <h3>EXPERT BEAUTICIANS</h3>
             <p>Beauty Experts Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -72,41 +72,55 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/A595fQS4hd8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
-    <section class="beauticians">
+    <section class="beauticians" id="beauticians">
         <div>
             <img src="images/beautician1.png" alt="photo of a female beautician">
-            <h5>ALITA WILLIAMS</h5>
-            <span>COLOURIST</span>
+            <div class="profile">
+                <h5>ALITA WILLIAMS</h5>
+                <span>COLOURIST</span>
+            </div>
         </div>
         <div>
             <img src="images/beautician2.png" alt="photo of a female beautician">
-            <h5>AYESHA LAKE</h5>
-            <span>STYLER</span>
+            <div class="profile">
+                <h5>AYESHA LAKE</h5>
+                <span>STYLER</span>
+            </div>
         </div>
         <div>
             <img src="images/beautician3.png" alt="photo of a female beautician">
-            <h5>MICHELLE SMITH</h5>
-            <span>ESTHETICIAN</span>
+            <div class="profile">
+                <h5>MICHELLE SMITH</h5>
+                <span>ESTHETICIAN</span>
+            </div>
         </div>
     </section>
     <section class="offer">
-        <h5>COLOUR DAY OFFER!</h5>
-        <p>-10% ON HAIRCUT <br>COLOUR AND HIGHLIGHT</p>
-        <button><a href="#"> &mdash; BOOK APPOINTMENT</a></button>
+        <div class="coupon">
+            <h5>COLOUR DAY OFFER!</h5>
+            <p><strong class="emphasis">-10%</strong> ON HAIRCUT <br>COLOUR AND HIGHLIGHT</p>
+            <button class="book-offer"><a href="#booking"> &mdash; BOOK APPOINTMENT</a></button>
+        </div>
     </section>
-    <section class="lookbook">
-        <h2>OUR LOOKBOOK</h2>
-        <span>&mdash;</span><br>
-        <img src="images/lookbook1.png" alt="photo of a stylish model with trendy hairdo">
-        <img src="images/lookbook2.png" alt="photo of a stylish model with trendy hairdo">
-        <img src="images/lookbook3.png" alt="photo of a stylish model with trendy hairdo">
-        <img src="images/lookbook4.png" alt="photo of a stylish model with trendy hairdo">
-        <img src="images/lookbook5.png" alt="photo of a stylish model with trendy hairdo">
-        <img src="images/lookbook6.png" alt="photo of a stylish model with trendy hairdo">
-        <img src="images/lookbook7.png" alt="photo of a stylish model with trendy hairdo">
-        <img src="images/lookbook8.png" alt="photo of a stylish model with trendy hairdo">
-        <img src="images/lookbook9.png" alt="photo of a stylish model with trendy hairdo">
+    <section class="lookbook" id="lookbook">
+        <div>
+            <h2>OUR LOOKBOOK</h2>
+            <span>&mdash;</span><br>
+        </div>
+        <div class="lookbook-photo"><img src="images/lookbook1.png" alt="photo of a stylish model with trendy hairdo"></div>
+        <div class="lookbook-photo"><img src="images/lookbook2.png" alt="photo of a stylish model with trendy hairdo"></div>
+        <div class="lookbook-photo"><img src="images/lookbook3.png" alt="photo of a stylish model with trendy hairdo"></div>
+        <div class="lookbook-photo"><img src="images/lookbook4.png" alt="photo of a stylish model with trendy hairdo"></div>
+        <div class="lookbook-photo"><img src="images/lookbook5.png" alt="photo of a stylish model with trendy hairdo"></div>
+        <div class="lookbook-photo"><img src="images/lookbook6.png" alt="photo of a stylish model with trendy hairdo"></div>
+        <div class="lookbook-photo"><img src="images/lookbook7.png" alt="photo of a stylish model with trendy hairdo"></div>
+        <div class="lookbook-photo"><img src="images/lookbook8.png" alt="photo of a stylish model with trendy hairdo"></div>
+        <div class="lookbook-photo"><img src="images/lookbook9.png" alt="photo of a stylish model with trendy hairdo"></div>
     </section>
+    <div id="modal" class="modal">
+        <span id="closeModal" class="close">&times;</span>
+        <img id="modalImage" class="modal-content" />
+    </div>
     <script src="hairsalon.js"></script>
 </body>
 </html>
