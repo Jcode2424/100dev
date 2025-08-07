@@ -12,7 +12,24 @@
 <body>
     <section class="container">
         <section class="welcome">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#"><img src="images/rlogo.png" class="rlogo"></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#specialty">Menu</a></li>
+                    <li><a href="#hours">Order Now</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#"><img src="images/cart-1.png" class="cart"></a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
             <h1>Welcome <br>To Our Cuisine <br>Restaurant</h1>
+            <form action="/search" method="get">
+                <input type="search" id="searchBox" name="query" placeholder="Search" aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
             <nav>
                 <ul class="social-media">
                     <li><a href="#"><img src="images/fblogo.png" alt="facebook logo"></a></li>
@@ -21,20 +38,22 @@
                 </ul>
             </nav>
         </section>
-        <section class="about-us">
-            <span>About Us</span>
-            <h2>Discover Our <br>Restaurant Story</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="dropdown">
-                <button class="dropbtn">Discover Menu</button>
-                <div class="dropdown-content">
-                    <a href="#">Option 1</a>
-                    <a href="#">Option 2</a>
-                    <a href="#">Option 3</a>
+        <section class="about-us" id="about-us">
+            <div class="text-container">
+                <span>About Us</span>
+                <h2>Discover Our <br>Restaurant Story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="dropdown">
+                    <button class="dropbtn">Discover Menu</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="specialty">
+        <section class="specialty" id="specialty">
             <span><a href="#">Order Online Now</a></span>
             <h2>Our Specialty Cuisine</h2>
             <nav>
@@ -46,6 +65,7 @@
                     <li><a href="#">Shake</a></li>
                 </ul>
             </nav>
+            <hr class="hr">
             <ul class="menu">
                 <li><a href="#"><img src="images/breakfast1.png" alt="image of a salad"></a></li>
                 <li><a href="#"><img src="images/breakfast2.png" alt="image of a salad"></a></li>
@@ -57,29 +77,60 @@
                 <li><a href="#"><img src="images/salad2.png" alt="image of a salad"></a></li>
             </ul>
         </section>
-        <section class="hours">
-            <span>Book Table</span>
-            <h2>Opening Hours</h2>
-            <a href="#"><img src="phone.png" alt="graphic of a phone"><br><span>Call Now</span><br><span>+12345 678 910</span></a>
-            <div class="info-container">
-                <div class="left-info">
-                    <p>Monday to Thursday</p>
-                    <p>09:00 am - 22:00 pm</p>
+        <section class="hours" id="hours">
+            <div class="background-container">
+                <span>Book Table</span>
+                <h2>Opening Hours</h2>
+                <a href="#"><img src="images/phonelogo.png" alt="graphic of a phone" id="phone"><br><span class="call-now">Call Now</span><br><span class="phone-number">+12345 678 910</span></a>
+                <div class="info-container">
+                    <div class="left-info">
+                        <p>Monday to Thursday</p>
+                        <p class="time">09:00 am - 22:00 pm</p>
+                    </div>
+                    <div class="right-info">
+                        <p>Saturday to Sunday</p>
+                        <p class="time">11:00 am - 20:00 pm</p>
+                    </div>
                 </div>
-                <div class="right-info">
-                    <p>Saturday to Sunday</p>
-                    <p>11:00 am - 20:00 pm</p>
-                </div>
+                <img src="images/restaurant4.png" alt="breakfast bowl on a colorful book">
             </div>
         </section>
         <section class="reviews">
             <span>Testimonials</span>
             <h2>Customers Say</h2>
             <review>
-                <img src="images/review1.png" alt="headshot of a reviewer">
-                <name>Mr. John Smith</name>
-                <job>Art Director</job>
-                <img src="images/fivestar.png" alt="five stars">
+                <img src="images/review1.png" alt="headshot of a reviewer" class="headshot"><br>
+                <name>Ms. Jane Doe</name><br>
+                <job>Art Director</job><br>
+                <img src="images/fivestar.png" alt="five stars" class="fivestar">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </review>
+            <review>
+                <img src="images/review2.png" alt="headshot of a reviewer" class="headshot"><br>
+                <name>Mr. John Smith</name><br>
+                <job>Art Director</job><br>
+                <img src="images/fivestar.png" alt="five stars" class="fivestar">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </review>
+            <review>
+                <img src="images/review3.png" alt="headshot of a reviewer" class="headshot"><br>
+                <name>Mr. John Smith</name><br>
+                <job>Art Director</job><br>
+                <img src="images/fivestar.png" alt="five stars" class="fivestar">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </review>
+            <review>
+                <img src="images/review4.png" alt="headshot of a reviewer" class="headshot"><br>
+                <name>Mr. John Smith</name><br>
+                <job>Art Director</job><br>
+                <img src="images/fivestar.png" alt="five stars" class="fivestar">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </review>
+            <review>
+                <img src="images/review5.png" alt="headshot of a reviewer" class="headshot"><br>
+                <name>Mr. John Smith</name><br>
+                <job>Art Director</job><br>
+                <img src="images/fivestar.png" alt="five stars" class="fivestar">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </review>
         </section>

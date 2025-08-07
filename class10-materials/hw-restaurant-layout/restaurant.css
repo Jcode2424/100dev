@@ -3,27 +3,87 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Libertinus Serif", sans-serif;
 }
 li {
     list-style: none;
 }
 a {
     text-decoration: none;
+    color: black;
 }
 /*
 ----------------------------------------------------------------
 Welcome Section
 ----------------------------------------------------------------
 */
+.container {
+    width: 100%;
+    background-image: url('images/restaurant1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    position: absolute;
+}
 .welcome {
-    width: 100%; 
+    width: 90%; 
+    height: 800px;
+    margin: 100px auto 50px;
+    background-image: url('images/restaurant7.png'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+    text-align: center;
+    box-sizing: border-box;
+    outline: 2px solid rgba(31, 110, 43, 0.8);
+    border-radius: 5px;
+}
+.welcome nav {
+    /* padding-top: 1px; */
+    box-sizing: border-box;
+}
+.main-nav {
+    width: 100%;
+    height: 6em;
+}
+.main-nav li {
+    width: 8%;
+    height: 6em;
+    line-height: 6em;
+    float: right;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.main-nav img.rlogo {
+    width: 6em;
+    height: 4em;
+    line-height: 6em;
+    margin: 20px 0 0 0;
+    box-sizing: border-box;
+    float: left;
+}
+.main-nav img.cart {
+    width: 1.7em;
 }
 .welcome h1 {
-    font-size: 4em;
+    clear: both;
+    margin: 5% auto 25px 80px;
+    line-height: 1em;
+    font-size: 5.7em;
+    font-weight: 1400;
     font-family: "Libertinus Serif", sans-serif;
+    text-align: left;
+}
+#searchbox {
+    text-align: left;
+}
+.welcome nav ul {
+    margin-left: 80px;
 }
 .welcome nav li {
     float: left;
+    margin-left: 10px;
 }
 .welcome .social-media img {
     width: 20px;
@@ -37,34 +97,96 @@ About Us Section
 */
 .about-us {
     clear: both;
+    width: 90%;
+    height: 800px;
+    background-image: url(images/restaurant3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 100px auto 50px;
+    outline: 2px solid rgba(31, 110, 43, 0.8);
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+    padding-top: 180px;
+    border-radius: 5px;
+}
+.about-us .text-container {
+    width: 45%;
+    height: auto;
+    margin-left: 300px;
+    position: relative;
+}
+.about-us span {
+    font-size: 2em;
+    color: orangered;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
 }
 .about-us h2 {
-    font-size: 3.5em;
+    font-size: 4.5em;
     font-family: "Libertinus Serif", sans-serif;
+    font-weight: 1000;
+    line-height: 1em;
+}
+.about-us p {
+    margin-top: 20px;
 }
 /*
 ----------------------------------------------------------------
 Our Specialty Section
 ----------------------------------------------------------------
 */
+.specialty {
+    width: 90%;
+    height: 1200px;
+    margin: 100px auto 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.specialty span a {
+    color: orangered;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
+    text-align: center;
+}
 .specialty h2 {
-    font-size: 3.5em;
-    font-family: "Libertinus Serif", sans-serif;  
+    font-size: 4.5em;
+    font-weight: 1000;
+    font-family: "Libertinus Serif", sans-serif;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
+    text-align: center;
 }
 .specialty nav li {
     float: left;
     width: 20%;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.specialty .menu {
+.specialty nav li a {
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
+}
+.specialty hr {
     clear: both;
+    border: none;
+    border-top: 2px solid  rgba(31, 110, 43, 0.8);
+}
+.specialty ul {
+    margin: 40px auto;
 }
 .specialty .menu li {
     float: left;
-    width: 24%;
+    width: 25%;
     list-style: none;
+    margin: 8px 0 4px 0;
 }
 .specialty .menu img {
     width: 95%;
+    border: 2px solid rgba(31, 110, 43, 0.8);
+    border-radius: 10px;
 }
 /*
 ----------------------------------------------------------------
@@ -73,24 +195,76 @@ Opening Hours Section
 */
 .hours {
     clear: both;
+    width: 90%;
+    height: 800px;
+    background-image: url(images/restaurant2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 130px auto 50px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+.hours .background-container {
+    width: 100%;
+    height: 800px;
+    outline: 2px solid rgba(31, 110, 43, 0.8);
+}
+.hours span {
+    display: inline-block;
+    margin-top: 40px;
+    color: orangered;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
+}
+.hours > div > span {
+    font-size: 2em;
+}
+.hours span.call-now {
+    margin-top: 10px;
+    color: white;
+}
+.hours span.phone-number {
+    margin-top: 10px;
+    font-size: 2em;
 }
 .hours h2 {
-    font-size: 3.5em;
+    font-size: 4em;
+    font-weight: 1000;
     font-family: "Libertinus Serif", sans-serif;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
+}
+#phone {
+    margin-top: 20px;
+    width: 20px;
 }
 .info-container {
-    width: 100%;
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
     overflow: hidden;
 }
 .left-info {
     float: left;
     width: 45%;
     text-align: left;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
 }
 .right-info {
     float: right;
     width: 45%;
     text-align: right;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
+}
+.time {
+    font-size: 1.7em;
+}
+.background-container > img {
+    width: 35%;
+    margin-top: 20px;
+    outline: 2px solid rgba(31, 110, 43, 0.8);
 }
 
 /*
@@ -98,11 +272,44 @@ Opening Hours Section
 Customer Reviews Section
 ----------------------------------------------------------------
 */
-.reviews h2 {
-    font-size: 3.5em;
-    font-family: "Libertinus Serif", sans-serif;
-}
-.reviews img {
+.reviews {
+    clear: both;
+    width: 90%;
+    font-size: 1.2em;
+    font-weight: bold;
     text-align: center;
-    width: 20%;
+    background-image: url(images/restaurant5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    margin: 110px auto 50px;
+    outline: 2px solid rgba(31, 110, 43, 0.8);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 5px;
+}
+.reviews span {
+    color: orangered;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
+}
+.reviews h2 {
+    font-size: 4.5em;
+    font-family: "Libertinus Serif", sans-serif;
+    margin-bottom: 30px;
+}
+.reviews img.headshot {
+    text-align: center;
+    width: 15%;
+    outline: 2px solid rgba(31, 110, 43, 0.8);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.reviews p {
+    width: 40%;
+    text-align: center;
+    margin: 5px auto;
+}
+.fivestar {
+    width: 100px;
 }
