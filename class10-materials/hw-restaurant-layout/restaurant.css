@@ -20,14 +20,15 @@ Welcome Section
 .container {
     width: 100%;
     background-image: url('images/restaurant1.png');
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+    background-position: left top;
     background-repeat: repeat;
+    overflow: hidden;
     position: absolute;
 }
 .welcome {
     width: 90%; 
-    height: 800px;
+    height: 900px;
     margin: 100px auto 50px;
     background-image: url('images/restaurant7.png'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire section */
@@ -39,7 +40,6 @@ Welcome Section
     border-radius: 5px;
 }
 .welcome nav {
-    /* padding-top: 1px; */
     box-sizing: border-box;
 }
 .main-nav {
@@ -47,47 +47,90 @@ Welcome Section
     height: 6em;
 }
 .main-nav li {
-    width: 8%;
     height: 6em;
     line-height: 6em;
-    float: right;
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
 }
 .main-nav img.rlogo {
-    width: 6em;
-    height: 4em;
+    width: 9em;
+    height: 6em;
     line-height: 6em;
     margin: 20px 0 0 0;
     box-sizing: border-box;
-    float: left;
 }
 .main-nav img.cart {
     width: 1.7em;
 }
+.main-nav .left-nav {
+    float: left;
+}
+.main-nav .right-nav {
+    float: right;
+    width: 60%;
+    margin-right: 7%;
+}
+.main-nav .right-nav li {
+    width: 11%;
+    text-align: center;
+}
 .welcome h1 {
     clear: both;
-    margin: 5% auto 25px 80px;
+    margin: 4% auto 15px 80px;
     line-height: 1em;
-    font-size: 5.7em;
+    font-size: 5.3em;
     font-weight: 1400;
     font-family: "Libertinus Serif", sans-serif;
     text-align: left;
 }
-#searchbox {
+.welcome form {
     text-align: left;
+    margin-left: 80px;
+    height: 2em;
+}
+.searchbox {
+    --target-size: 48px;
+    --box-height: var(--target-size);
+    height: var(--box-height);
+}
+.searchbox input[type='search'] {
+    height: 100%;
+}
+button[type="submit"] {
+    background-color: orange;
+    color: white;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: darkorange;
 }
 .welcome nav ul {
-    margin-left: 80px;
+    margin-left: 50px;
 }
 .welcome nav li {
     float: left;
     margin-left: 10px;
 }
+.welcome > nav ~ nav {
+    margin-left: 25px;
+    margin-top: 20px;
+}
 .welcome .social-media img {
-    width: 20px;
+    width: 25px;
     height: auto;
+}
+.welcome > img {
+    display: block;
+    width: 30%;
+    margin-top: 70px;
+    margin-left: 8%;
+    outline: 2px solid rgba(31, 110, 43, 0.8);
+    border-radius: 5px;
 }
 
 /*
@@ -157,14 +200,13 @@ Our Specialty Section
     font-family: "Libertinus Serif", sans-serif;
     text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
     text-align: center;
+    margin-bottom: 30px;
 }
-.specialty nav li {
+.specialty .navbar li {
     float: left;
     width: 20%;
     text-align: center;
     margin-bottom: 20px;
-}
-.specialty nav li a {
     color: white;
     font-size: 1.2em;
     text-shadow: 2px 2px 0px rgba(31, 110, 43, 0.8), -2px -2px 0px rgba(31, 110, 43, 0.8), 2px -2px 0px rgba(31, 110, 43, 0.8), -2px 2px 0px rgba(31, 110, 43, 0.8);
@@ -174,20 +216,89 @@ Our Specialty Section
     border: none;
     border-top: 2px solid  rgba(31, 110, 43, 0.8);
 }
-.specialty ul {
+.specialty div.images {
     margin: 40px auto;
+} 
+.images {
+    width: 100%;
 }
-.specialty .menu li {
+.category-images {
+    width: 24%;
+    height: auto;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+}
+.images .category-images > div {
     float: left;
-    width: 25%;
-    list-style: none;
-    margin: 8px 0 4px 0;
 }
-.specialty .menu img {
+.specialty .images .category-images {
+    margin-left: 12px;
+}
+.category-images {
+    display: none;
+}
+#category1 {
+    display: block;
+}
+.specialty .images .category-images .image-container img {
     width: 95%;
+    list-style: none;
+    margin: 8px 5px 4px 5px;
     border: 2px solid rgba(31, 110, 43, 0.8);
     border-radius: 10px;
+    transition: opacity 0.3 ease-in-out;
 }
+.overlay {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 94.5%;
+    height: 96%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+.menu-details {
+    color: white;
+    text-align: center;
+    margin-top: 40%;
+}
+.dish-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.stars {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+.order-btn {
+    padding: 10px 20px;
+    background-color: #FF6347;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.order-btn:hover {
+    background-color: #FF4500;
+}
+.image-container:hover img {
+    opacity: 0.6s; 
+}
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
 /*
 ----------------------------------------------------------------
 Opening Hours Section
@@ -212,6 +323,7 @@ Opening Hours Section
     width: 100%;
     height: 800px;
     outline: 2px solid rgba(31, 110, 43, 0.8);
+    border-radius: 5px;
 }
 .hours span {
     display: inline-block;
@@ -263,6 +375,7 @@ Opening Hours Section
 }
 .background-container > img {
     width: 35%;
+    border-radius: 5px;
     margin-top: 20px;
     outline: 2px solid rgba(31, 110, 43, 0.8);
 }
@@ -281,7 +394,7 @@ Customer Reviews Section
     background-image: url(images/restaurant5.png);
     background-size: cover;
     background-position: center;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     margin: 110px auto 50px;
     outline: 2px solid rgba(31, 110, 43, 0.8);
     padding-top: 60px;
@@ -308,7 +421,7 @@ Customer Reviews Section
 .reviews p {
     width: 40%;
     text-align: center;
-    margin: 5px auto;
+    margin: 0 auto 10px;
 }
 .fivestar {
     width: 100px;

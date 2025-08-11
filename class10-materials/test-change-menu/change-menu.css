@@ -1,0 +1,37 @@
+/* Style for the navbar */
+.navbar {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 1em;
+}
+
+.categories {
+    list-style: none;
+    padding: 0;
+}
+
+.categories .category {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.categories .category:hover {
+    background-color: #ddd;
+}
+
+/* Style for the images */
+.images {
+    margin-top: 20px;
+}
+
+.category-images {
+    display: none;
+    text-align: center;
+}
+
+.category-images img {
+    width: 100px; /* or any desired size */
+    margin: 5px;
+}

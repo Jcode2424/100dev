@@ -1,0 +1,82 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adjust gap between the images */
+}
+
+.menu-item {
+    position: relative;
+    width: 30%; /* Adjust width depending on how many images per row */
+    height: 350px; /* Adjust as needed */
+}
+
+.menu-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out; /* Smooth opacity transition */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for overlay */
+}
+
+.menu-details {
+    color: white;
+    text-align: center;
+}
+
+.dish-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.stars {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.order-btn {
+    padding: 10px 20px;
+    background-color: #FF6347; /* Tomato color */
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #FF4500; /* Darker tomato color */
+}
+
+/* Show overlay and darken image on hover */
+.menu-image-container:hover img {
+    opacity: 0.6; /* Darken the image */
+}
+
+.menu-image-container:hover .overlay {
+    opacity: 1; /* Show the overlay */
+}

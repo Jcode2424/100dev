@@ -1,5 +1,5 @@
 // Select all the images in the lookbook
-const images = document.querySelectorAll('.lookbook-photo img');
+const images = document.querySelectorAll('.lookbook-photo');
 
 // Get the modal and modal content
 const modal = document.getElementById('modal');

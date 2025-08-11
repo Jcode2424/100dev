@@ -14,20 +14,24 @@
         <section class="welcome">
             <nav>
                 <ul class="main-nav">
-                    <li><a href="#"><img src="images/rlogo.png" class="rlogo"></a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#specialty">Menu</a></li>
-                    <li><a href="#hours">Order Now</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#"><img src="images/cart-1.png" class="cart"></a></li>
-                    <li><a href="#">Search</a></li>
+                    <div class="left-nav">
+                        <li><a href="#"><img src="images/rlogo.png" class="rlogo"></a></li>
+                    </div>
+                    <div class="right-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#specialty">Menu</a></li>
+                        <li><a href="#specialty">Order Now</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#"><img src="images/cart-1.png" class="cart"></a></li>
+                        <li><a href="#">Search</a></li>
+                    </div>
                 </ul>
             </nav>
             <h1>Welcome <br>To Our Cuisine <br>Restaurant</h1>
             <form action="/search" method="get">
-                <input type="search" id="searchBox" name="query" placeholder="Search" aria-label="Search">
+                <input type="search" class="searchBox" name="query" placeholder="Search" aria-label="Search">
                 <button type="submit">Search</button>
             </form>
             <nav>
@@ -37,6 +41,7 @@
                     <li><a href="#"><img src="images/instalogo.png" alt="instagram logo"></a></li>
                 </ul>
             </nav>
+            <img src="images/restaurant6.png" alt="restaurant photo">
         </section>
         <section class="about-us" id="about-us">
             <div class="text-container">
@@ -56,26 +61,468 @@
         <section class="specialty" id="specialty">
             <span><a href="#">Order Online Now</a></span>
             <h2>Our Specialty Cuisine</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Breakfast</a></li>
-                    <li><a href="#">Lunch</a></li>
-                    <li><a href="#">Dinner</a></li>
-                    <li><a href="#">Dessert</a></li>
-                    <li><a href="#">Shake</a></li>
+            <section class="navbar">
+                <ul class="categories">
+                    <li class="category" onClick="showCategory('category1')">Breakfast</li>
+                    <li class="category" onClick="showCategory('category2')">Lunch</li>
+                    <li class="category" onClick="showCategory('category3')">Dinner</li>
+                    <li class="category" onClick="showCategory('category4')">Dessert</li>
+                    <li class="category" onClick="showCategory('category5')">Shake</li>
                 </ul>
-            </nav>
-            <hr class="hr">
-            <ul class="menu">
-                <li><a href="#"><img src="images/breakfast1.png" alt="image of a salad"></a></li>
-                <li><a href="#"><img src="images/breakfast2.png" alt="image of a salad"></a></li>
-                <li><a href="#"><img src="images/breakfast3.png" alt="image of a salad"></a></li>
-                <li><a href="#"><img src="images/breakfast4.png" alt="image of a salad"></a></li>
-                <li><a href="#"><img src="images/breakfast5.png" alt="image of a salad"></a></li>
-                <li><a href="#"><img src="images/breakfast6.png" alt="image of a salad"></a></li>
-                <li><a href="#"><img src="images/salad1.png" alt="image of a salad"></a></li>
-                <li><a href="#"><img src="images/salad2.png" alt="image of a salad"></a></li>
-            </ul>
+                <hr class="hr">
+                <div class="images">
+                    <div class="category-images" id="category1">
+                        <div class="image-container">
+                            <img src="images/breakfast1.png" alt="breakfast">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Breakfast1</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/breakfast2.png" alt="breakfast">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Breakfast2</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/breakfast3.png" alt="breakfast">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Breakfast3</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/breakfast4.png" alt="breakfast">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Breakfast4</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/breakfast5.png" alt="breakfast">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Breakfast5</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/breakfast6.png" alt="breakfast">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Breakfast6</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/breakfast7.png" alt="breakfast">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Breakfast7</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                            <div class="image-container">
+                                <img src="images/breakfast8.png" alt="breakfast">
+                                <div class="overlay">
+                                    <div class="menu-details">
+                                        <h3 class="dish-name">Breakfast8</h3>
+                                        <p class="price">$19.99</p>
+                                        <div class="stars">★★★★☆</div>
+                                        <button class="order-btn">Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-images" id="category2">
+                        <div class="image-container">
+                            <img src="images/lunch1.png" alt="lunch">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Lunch1</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/lunch2.png" alt="lunch">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Lunch2</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/lunch3.png" alt="lunch">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Lunch3</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/lunch4.png" alt="lunch">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Lunch4</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/lunch5.png" alt="lunch">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Lunch5</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/lunch6.png" alt="lunch">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Lunch6</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/lunch7.png" alt="lunch">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Lunch7</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/lunch8.png" alt="lunch">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Lunch8</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-images" id="category3">
+                        <div class="image-container">
+                            <img src="images/dinner1.png" alt="dinner">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dinner1</h3>
+                                    <p class="price">$29.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="image-container">
+                            <img src="images/dinner2.png" alt="dinner">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dinner2</h3>
+                                    <p class="price">$39.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="image-container">
+                            <img src="images/dinner3.png" alt="dinner">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dinner3</h3>
+                                    <p class="price">$39.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="image-container">
+                            <img src="images/dinner4.png" alt="dinner">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dinner4</h3>
+                                    <p class="price">$39.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="image-container">
+                            <img src="images/dinner5.png" alt="dinner">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dinner5</h3>
+                                    <p class="price">$39.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="image-container">
+                            <img src="images/dinner6.png" alt="dinner">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dinner6</h3>
+                                    <p class="price">$39.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="image-container">
+                            <img src="images/dinner7.png" alt="dinner">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dinner7</h3>
+                                    <p class="price">$39.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="image-container">
+                            <img src="images/dinner8.png" alt="dinner">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dinner8</h3>
+                                    <p class="price">$39.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-images" id="category4">
+                         <div class="image-container">
+                            <img src="images/dessert1.png" alt="dessert">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dessert1</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/dessert2.png" alt="dessert">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dessert2</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/dessert3.png" alt="dessert">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dessert3</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/dessert4.png" alt="dessert">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dessert4</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/dessert5.png" alt="dessert">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dessert5</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/dessert6.png" alt="dessert">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dessert6</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/dessert7.png" alt="dessert">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dessert7</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/dessert8.png" alt="dessert">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Dessert8</h3>
+                                    <p class="price">$19.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-images" id="category5">
+                        <div class="image-container">
+                            <img src="images/shake1.png" alt="shake">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Shake1</h3>
+                                    <p class="price">$9.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="image-container">
+                            <img src="images/shake2.png" alt="shake">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Shake2</h3>
+                                    <p class="price">$9.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="image-container">
+                            <img src="images/shake3.png" alt="shake">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Shake3</h3>
+                                    <p class="price">$9.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="image-container">
+                            <img src="images/shake4.png" alt="shake">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Shake4</h3>
+                                    <p class="price">$9.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="image-container">
+                            <img src="images/shake5.png" alt="shake">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Shake5</h3>
+                                    <p class="price">$9.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="image-container">
+                            <img src="images/shake6.png" alt="shake">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Shake6</h3>
+                                    <p class="price">$9.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="image-container">
+                            <img src="images/shake7.png" alt="shake">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Shake7</h3>
+                                    <p class="price">$9.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="image-container">
+                            <img src="images/shake8.png" alt="shake">
+                            <div class="overlay">
+                                <div class="menu-details">
+                                    <h3 class="dish-name">Shake8</h3>
+                                    <p class="price">$9.99</p>
+                                    <div class="stars">★★★★☆</div>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
         <section class="hours" id="hours">
             <div class="background-container">
@@ -135,5 +582,6 @@
             </review>
         </section>
     </section>
+    <script src="restaurant.js"></script>
 </body>
 </html>
