@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS Followers</title>
+</head>
+<body>
+    <nav>
+        <ul class="social-media">
+            <li id="twitter">
+                <a href="https://twitter.com/username" target="_blank">
+                    <img src="images/fblogo.png" alt="facebook logo">
+                </a>
+                <span class="followers twitter-followers">Loading...</span>
+            </li>
+            <li id="facebook">
+                <a href="https://www.facebook.com/username" target="_blank">
+                    <img src="images/xlogo.png" alt="twitter logo">
+                </a>
+                <span class="followers facebook-followers">Loading...</span>
+            </li>
+            <li id="instagram">
+                <a href="https://www.instagram.com/username" target="_blank">
+                    <img src="images/instalogo.png" alt="instagram logo">
+                </a>
+                <span class="followers instagram-followers">Loading...</span>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Twitter Follow Button Embed -->
+    <a href="https://twitter.com/username?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @username</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!-- Facebook Page Plugin Embed -->
+    <div class="fb-page" data-href="https://www.facebook.com/username" data-tabs="timeline" data-width="340" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/username" class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/username">Facebook Page</a>
+    </blockquote>
+    </div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="abcdefg"></script>
+
+    <!-- Instagram Follow Button Embed -->
+    <a href="https://www.instagram.com/username" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Follow on Instagram" />
+    </a>
+
+</body>
+</html>

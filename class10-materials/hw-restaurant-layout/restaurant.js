@@ -33,7 +33,7 @@ function showCategory(categoryId) {
 
     const allCategories = document.querySelectorAll('.category-images');
     allCategories.forEach(category => {
-        category.computedStyleMap.display = 'none';
+        category.style.display = 'none';
     });
 
     const selectedCategory = document.getElementById(categoryId);
@@ -43,3 +43,10 @@ function showCategory(categoryId) {
 window.onload = function () {
     showCategory('category1');
 };
+
+//dropdown opens when clicked
+
+document.querySelector(".dropbtn").addEventListener("click", function() {
+    const dropdownContent = document.querySelector(".dropdown-content");
+    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+});

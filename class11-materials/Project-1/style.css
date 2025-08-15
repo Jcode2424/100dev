@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    height: 100vh;
+
+    /*To place some gap between boxes*/
+    gap: 25px;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+    align-content: center;
+    flex-wrap: wrap;
+
+    align-items: flex-end;
+
+    flex-flow: row wrap;
+
+    place-content : center flex-end;
+}
+.box-1 {
+    flex-grow: 1;
+}
+.box-2 {
+    flex-grow: 5;
+    align-self: center;
+    flex: 2 1 30em;
+}
+.box-3 {
+    flex-grow: 1;
+}
+
+[class ^="box-"]{
+    width: 140px;
+    height: 140px;
+    background-color: skyblue;
+    border: 2px solid black;
+
+    /*To view the letter better*/
+    font-size: 65px;
+
+    /*Placing text at center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
