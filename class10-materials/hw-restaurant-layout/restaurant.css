@@ -124,7 +124,7 @@ button[type="submit"]:hover {
     width: 25px;
     height: auto;
 }
-.welcome > img {
+.welcome > a > img {
     display: block;
     width: 30%;
     margin-top: 70px;
