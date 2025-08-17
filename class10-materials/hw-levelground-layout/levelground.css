@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/*
+-----------------------------------------------------------------
+Navigation Bar
+-----------------------------------------------------------------
+*/
+header {
+    background-color: #66768a;
+}
+header > nav, header > nav > ul {
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    line-height: 4em;
+}
+header > nav > ul.left-list {
+    flex-basis: 10%;
+    justify-content: space-between;
+    margin-left: 4%;
+}
+header > nav > ul.left-list > li > a {
+    color: white;
+    font-weight: 800;
+}
+header > nav > ul.right-list {
+    justify-content: flex-end;
+    margin-right: 4%;
+}
+.button {
+    width: 8em;
+    height: 2.5em;
+    background: white;
+    color: #66768a;
+    border-radius: 5px;
+    border: none;
+    font-weight: 800;
+}
+.lg-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4em;
+}
+/*
+----------------------------------------------------------------
+First Section
+----------------------------------------------------------------
+*/
+.first-section {
+    background: #66768a;
+    color: white;
+    text-align: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.first-section h1 {
+    font-size: 4em;
+    margin-top: 100px;
+}
+.first-section p {
+    font-size: 1.5em;
+    margin: 40px auto 40px;
+}
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 640px;
+    height: 360px;
+    margin: auto;
+}
+.video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: none;
+    border-radius: 5px;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 34px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.8;
+}
+.play-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:  #66768a;
+    border: 2px solid white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+}
+.play-button span {
+    margin-left: 15px;
+    padding-left: 15px;
+    color: white;
+    font-size: 0.8em;
+    width: 15em;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    padding-left: 15px;
+}
+.play-button:hover {
+    opacity: 1;
+}
+.play-button i {
+    font-size: 2em;
+}
+/*
+----------------------------------------------------------------
+Second Section
+----------------------------------------------------------------
+*/
+.second-section {
+    background: white;
+    color: #161f2a;
+    height: 700px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second-section h2 {
+    font-size: 3.5em;
+}
+.second-section p {
+    width: 80%;
+    font-size: 1.5em;
+}
+/*
+----------------------------------------------------------------
+Third Section
+----------------------------------------------------------------
+*/
+.third-section {
+    height: 1000px;
+    color: #161f2a;
+    background: #dbdfe2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.third-section h3 {
+    font-size: 2.7em;
+    margin-bottom: 20px;
+}
+.third-section img {
+    width: 60%;
+    height: 0;
+    padding-top: 40%;
+    margin-bottom: 20px;
+    background: #66768a;
+    object-fit: cover;
+}
+.third-section p {
+    width: 70%;
+    text-align: center;
+}
+.third-section button, .fourth-section button {
+    width: 12em;
+    height: 4em;
+    margin-top: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    background: transparent;
+}
+
+/*
+----------------------------------------------------------------
+Fourth Section
+----------------------------------------------------------------
+*/
+.fourth-section {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #161f2a;
+}
+.fourth-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.fourth-section p {
+    width: 70%;
+    margin-bottom: 20px;
+}
+/*
+----------------------------------------------------------------
+Footer
+----------------------------------------------------------------
+*/
+footer {
+    background: #161f2a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 4%;
+}
+footer > section {
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    color: white;
+}
+footer .sns img {
+    width: 2em;
+}
+footer .sns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8em;
+}
+footer .left-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer .site-map ul, footer .contribute ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 8em;
+}
+footer .left-list span {
+    color: #66768a;
+    font-weight: bold;
+}
+footer .right-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer hr {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+    line-height: 2em;
+}
+.copyright img {
+    width: 2em;
+}

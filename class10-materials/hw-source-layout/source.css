@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #2c4458;
+}
+ul {
+    list-style: none;
+}
+.gradient-container {
+    height: 1300px;
+    background: linear-gradient(to bottom right, #e0ecf7, #fefeff)
+}
+/*
+----------------------------------------------------------------
+Header
+----------------------------------------------------------------
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    line-height: 4em;
+    margin: 0 4%;
+}
+.left-list a {
+    font-weight: bold;
+}
+.middle-list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 33%;
+}
+header a {
+    color: #2c4458;
+}
+.right-list button {
+    width: 8em;
+    height: 3em;
+    background: #2c4458;
+}
+.right-list a {
+    color: white;
+}
+
+/*
+----------------------------------------------------------------
+First Section
+----------------------------------------------------------------
+*/
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.first-section div + div {
+    width: 1500px;
+    overflow: hidden;
+}
+.first-section img {
+    width: 100%;
+    text-align: right;
+}
+.first-section div:first-child {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.first-section div:first-child h2,
+.first-section div:first-child p {
+    color: #2c4458;
+    margin-top: 20px;
+}
+.first-section h2 {
+    font-size: 3em;
+    line-height: 1.2em;
+}
+.first-section p {
+    width: 50%;
+    margin-top: 30px;
+    color: #2c4458;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.searchbox {
+    border: none;
+    outline: none;
+    background-color: #d1dae1;
+    flex-grow: 1;
+    font-size: 1em;
+    width: 16em;
+    height: 2.5em;
+    color: #aaa;
+}
+.search-button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 8em;
+    height: 3em;
+    background: #2c4458;
+}
+.search-button:hover {
+    background-color: #34495e;
+}
+
+/*
+----------------------------------------------------------------
+Middle Section
+----------------------------------------------------------------
+*/
+.middle-section {
+    display: flex;
+    flex-direction: space-between;
+    margin-left: 10%;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 20%;
+    margin-top: 70px;
+    margin-right: 5%;
+}
+.feature img {
+    width: 3em;
+    margin-bottom: 20px;
+}
+.feature a, .feature-s {
+    font-weight: 800;
+    color: #2c4458;
+}
+.feature-s {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #2c4458;
+}
+.feature-p {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/*
+----------------------------------------------------------------
+Third Section
+----------------------------------------------------------------
+*/
+.third-section {
+    margin-left: 10%;
+    margin-top: 80px;
+    color: #2c4458;
+    height: 800px;
+}
+.third-section h1 {
+    font-size: 3.5em;
+    line-height: 1.3em;
+}
+.third-section p {
+    font-size: 1.3em;
+    color: #abbbc6;
+    margin-top: 30px;
+}
+.rectangle {
+    background: #e2eaf0;
+    width: 80%;
+    height: 60%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
