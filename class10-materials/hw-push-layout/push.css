@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #f7f8fb; */
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul, li {
+    list-style: none;
+}
+
+
+/*
+----------------------------------------------------------------
+Header
+----------------------------------------------------------------
+*/
+.container {
+    position: relative;
+    height: 1000px;
+    padding: 10px 100px;
+}
+.container {
+    background: linear-gradient(to right, #0a1632, #1a223b);
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+    color: #f7f8fb;
+}
+.circle {
+    width: 1.5em;
+    height: 1.5em;
+    border: 3px solid #f7f8fb;
+    border-radius: 50%;
+}
+.container header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    line-height: 4em;
+    font-size: 0.9em;
+    padding-top: 70px;
+}
+.container header .right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 58%;
+}
+.container header .right-nav li {
+    width: 58%;
+}
+.container header .right-nav li a {
+    color: #81868f;
+    font-weight: bold;
+}
+.container header .right-nav li:first-child a {
+    color: #f7f8fb;
+}
+.nav-button {
+    background: #343c4b;
+    color: #f7f8fb;
+    width: 11em;
+    height: 4em;
+    font-weight: 550;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    appearance: none;
+}
+/*
+----------------------------------------------------------------
+First-Section
+----------------------------------------------------------------
+*/
+.first-section {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image {
+    width: 50%;
+    aspect-ratio: 13/9;
+    background: #f7f8fb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 85%;
+}
+/*
+----------------------------------------------------------------
+Second-Section
+----------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------
+Third-Section
+----------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------
+Fourth-Section
+----------------------------------------------------------------
+*/
+.list-container {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+.slider {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+.slider li {
+    flex: 0 0 50%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/*
+----------------------------------------------------------------
+Fifth-Section
+----------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------
+Sixth-Section
+----------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------
+Seventh-Section
+----------------------------------------------------------------
+*/
+.list-container-r {
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+.slider-r {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+.slider-r li {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #ccc;
+}
+.controls-r {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/*
+----------------------------------------------------------------
+Eight-Section
+----------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------
+Footer
+----------------------------------------------------------------
+*/
