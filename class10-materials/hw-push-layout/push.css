@@ -417,7 +417,7 @@ Fourth-Section
     font-weight: bold;
 }
 .fourth-section > div.fs-button {
-    padding-top: 80px;
+    padding-top: 120px;
 }
 .fourth-section > div.fs-button button {
     width: 17em;
@@ -456,6 +456,22 @@ Fifth-Section
     z-index: 2;
     color: #0a1632;
     font-weight: bold;
+}
+.fifth-section > div + div > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+.fifth-section > div + div > ul > li {
+    background: #f7f8fb;
+    color: #0a1632;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
 }
 
 /*
