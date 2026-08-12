@@ -1,3 +1,4 @@
+
 // Task 1: Is else required?
 
 document.querySelector('#button1').addEventListener('click', elseRequired)
@@ -11,7 +12,7 @@ function elseRequired() {
         a = "needed!"
     }        
 
-    document.querySelector('#print').innerText = 'Else is ' + `${a}`;
+    document.querySelector('#print').innerText = 'Else is ' + `${a}.`;
 }
 
 function elseRequired1(age) {
@@ -43,7 +44,7 @@ function isSame() {
         a = "are not the same!";
     }
 
-    document.querySelector('#print2').innerText = 'The functions '+ `${a}`;
+    document.querySelector('#print2').innerText = 'The functions '+ `${a}.`;
 }
 
 function qmark(age) {
@@ -65,20 +66,46 @@ function or(age) {
 document.querySelector('#comp').addEventListener('click', comp);
 
 function comp() {
-    alert('comp is running');
-    let fvalue = document.querySelector('#first-value').value;
-    let svalue = document.querySelector('#second-value').value;
+    // alert('comp is running');
+    let min;
+    const fvalue = document.querySelector('#first-value').value;
+    const svalue = document.querySelector('#second-value').value;
 
     if (fvalue === "" && svalue === "") {
         alert('please submit the first and second values.')
     }
-    else if (fvalue === "") {
+    else if (fvalue === "" && svalue !== "") {
         alert('please submit the first value.')
     }
-    else if (svalue === "") {
+    else if (svalue === "" && fvalue !== "") {
         alert('please submit the second value.')
     }
     else {
-        
+        const fnum = Number(fvalue);
+        const snum = Number(svalue);
+        if (fnum >= snum) {
+            min = snum;
+        }
+        else {
+            min = fnum;
+        }
     }
+
+    document.querySelector('#print3').innerText = 'The min of ' + `${fvalue}` + ' and ' + `${svalue}` + ' is ' + `${min}.`;
+}
+
+// Task 4: Function pow(x, n)
+
+document.querySelector('#power').addEventListener('click', pow);
+
+function pow() {
+    const xvalue = Number(document.querySelector('#xvalue').value);
+    const nvalue = Number(document.querySelector('#nvalue').value);
+    let pow = 1;
+
+    for (let n=1; n<=nvalue; n++) {
+        pow = pow * xvalue;
+    }
+
+    document.querySelector('#print4').innerText = 'The power is ' + `${pow}.`;
 }
